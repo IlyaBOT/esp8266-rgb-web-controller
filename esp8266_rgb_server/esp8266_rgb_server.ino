@@ -1,6 +1,7 @@
-#include "libs.ino"
-#include "pins.ino"
-#include "variables.ino"
+#include <FastLED.h>
+#include <ESP8266WiFi.h>
+#include "pins.h"
+#include "variables.h"
 
 #ifndef DEBUG_MODE
 #define DEBUG_MODE 1

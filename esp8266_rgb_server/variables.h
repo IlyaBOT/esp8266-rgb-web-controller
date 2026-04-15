@@ -1,5 +1,4 @@
-#ifndef ESP8266_RGB_SERVER_VARIABLES_INO
-#define ESP8266_RGB_SERVER_VARIABLES_INO
+#pragma once
 
 const char* ssid = "MyCoolWiFiNetwork";
 const char* password = "youshallnotpass";
@@ -20,15 +19,14 @@ int pos3 = 0;
 int pos4 = 0;
 int pos5 = 0;
 
-const uint16_t numLeds = 10;
-
-const uint16_t pwmRange = 255;
-const uint16_t pwmFrequency = 1000;
-const uint8_t blueCalibrationLimit = 128;
-const uint8_t wifiRgbBreathMaxBlue = 63;
-const unsigned long wifiBreathPeriodMs = 4000;
-const unsigned long wifiConnectAnimationStepMs = 20;
-const unsigned long wifiConnectLogIntervalMs = 500;
+constexpr uint16_t numLeds = 10;
+constexpr uint16_t pwmRange = 255;
+constexpr uint16_t pwmFrequency = 1000;
+constexpr uint8_t blueCalibrationLimit = 128;
+constexpr uint8_t wifiRgbBreathMaxBlue = 63;
+constexpr unsigned long wifiBreathPeriodMs = 4000;
+constexpr unsigned long wifiConnectAnimationStepMs = 20;
+constexpr unsigned long wifiConnectLogIntervalMs = 500;
 
 uint16_t counterHue = 0;
 
@@ -45,7 +43,5 @@ CRGB leds[numLeds];
 unsigned long currentTime = 0;
 unsigned long previousTime = 0;
 unsigned long lastHueUpdate = 0;
-const long timeoutTime = 2000;
-const unsigned long hueStepIntervalMs = 60;
-
-#endif
+constexpr long timeoutTime = 2000;
+constexpr unsigned long hueStepIntervalMs = 60;
